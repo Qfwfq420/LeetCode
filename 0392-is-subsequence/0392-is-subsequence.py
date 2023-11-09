@@ -5,6 +5,8 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
+        if len(s) > len(t):
+            return False
         while t:
             if len(s) == 0:
                 return True
