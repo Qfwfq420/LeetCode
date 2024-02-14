@@ -8,7 +8,7 @@ class Solution(object):
             return len(nums)
         i = 2
         while i < len(nums):
-            if nums[i] == nums[i-1] and nums[i] == nums[i-2]:
+            if  nums[i] == nums[i-2]:
                 nums.remove(nums[i])
             else:
                 i += 1
