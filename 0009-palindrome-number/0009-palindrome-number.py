@@ -4,7 +4,7 @@ class Solution(object):
         :type x: int
         :rtype: bool
         """
-        y = [i for i in str(x)]
+        y = list(str(x))
         return y[:len(y)//2] == y[:(len(y) - 1)//2:-1]
 
         
